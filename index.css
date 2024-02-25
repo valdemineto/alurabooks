@@ -19,7 +19,13 @@ body {
     --cinza-escuro: #474646;
     --cinza-claro: #858585;
 }
-
+.cabecalhoN{
+    display: grid;
+    grid-template-columns: 2;
+}
+.desktop{
+    display: none;
+}
 .abaCategorias {
     display: none;
     position: absolute;
@@ -68,7 +74,6 @@ body {
     background-color: var(--branco);
     width: 100%;
 }
-
 #logo {
     width: 40px;
     height: 40px;
