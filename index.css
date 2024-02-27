@@ -231,15 +231,6 @@ a {
     position: relative;
 }
 
-.vendidos {
-    padding: 40px 0px;
-    background: var(--cinza-fundo);
-    display: grid;
-    gap: 20px;
-    grid-template-columns: 1fr;
-    position: relative;
-}
-
 .carossel {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
@@ -394,11 +385,8 @@ a {
         border: 0px;
     }
 }
-@media (min-width:1270px){
-    .carossel{
-        width: 60%;
-    }
-}
+
+
 
 
 /* ====== carrosel ====== */
@@ -448,6 +436,7 @@ a {
 .autora_descricao {
     grid-area: paragrafo;
     font-weight: 400;
+    /* width: 73%; */
 }
 
 .FavCar {
@@ -474,13 +463,14 @@ a {
 }
 
 @media (min-width:1024px) {
-    .abaLivros {
+    .abaLivros,.autoraMes {
         column-gap: 40px;
-        width: 65%;
+        width: 50%;
     }
 
     .titulo_livros {
         font-size: 2em;
+        /* width: max-content; */
     }
 }
 
@@ -494,13 +484,58 @@ a {
         "descricao imagem"
         "paragrafo imagem"
         "favoritos botao";
+    width: max-content;
 }
 
 .estrelas {
     grid-area: estrelas;
+    
 }
 
 /*=== detalhes vendidos ===*/
+@media (min-width:1270px){
+    .carossel{
+        width: 90%;
+    }
+    .img{
+        width:175px;
+    }
+    .lancamentos,
+    .vendidos{
+        padding: 40px 0px;
+    background: var(--cinza-fundo);
+    display: grid;
+    gap: 20px;
+    grid-template-columns:1fr 1fr;
+    }
+    .abaLivros,
+    .autoraMes{
+        width:90%;
+    }
+    .btnsLanc,
+    .btnsVend{
+        top: 65%;
+        left: 25%;
+    }
+
+.vendidos {
+    position: relative;
+}
+
+.btnsVend {
+    top: 85%;
+}
+
+.anteriorLanc,.anteriorVend {
+    position: absolute;
+    left: -700%;
+}
+
+.proximoLanc,.proximoVend {
+    /* position: absolute; */
+    left: 685%;
+}
+}
 /*======= topicos =======*/
 
 .topicos {
