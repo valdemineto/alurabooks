@@ -272,7 +272,11 @@ a {
 .btnsVend {
     display: none;
 }
-
+@media (min-width:1270px){
+    .carossel{
+        width: 60%;
+    }
+}
 
 @media (min-width:1024px) {
     .carossel {
