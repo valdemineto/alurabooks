@@ -10,373 +10,261 @@
     <link rel="icon" href="images/Logo.svg">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
     <title>AluraBooks</title>
-    <style>
-
-    </style>
 </head>
 
 
 <body>
-    <header class="cabecalhoN">
+    <header class="header">
         <nav class="menu_mobile">
-            <div class="menuN mobile">
-                <button type="button" class="menu_mobile">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="svgMenu" width="48" height="48" viewBox="0 0 48 48"
-                        fill="none">
-                        <g clip-path="url(#clip0_180681_498)">
-                            <path d="M6 36H42V32H6V36ZM6 26H42V22H6V26ZM6 12V16H42V12H6Z" fill="#002F52" />
-                        </g>
-                        <defs>
-                            <clipPath id="clip0_180681_498">
-                                <rect width="48" height="48" fill="white" />
-                            </clipPath>
-                        </defs>
-                    </svg>
-                </button>
-            </div>
-            <div class="logo mobile">
-                <a href="index.html"><img src="images/Logo.svg" alt="Logo alura books" id="logoMobile"></a>
-            </div>
+            <button type="button" class="menuMobile">
+                <svg xmlns="http://www.w3.org/2000/svg" class="svgMenu" width="48" height="48" viewBox="0 0 48 48"
+                    fill="none">
+                    <g clip-path="url(#clip0_180681_498)">
+                        <path d="M6 36H42V32H6V36ZM6 26H42V22H6V26ZM6 12V16H42V12H6Z" fill="#002F52" />
+                    </g>
+                    <defs>
+                        <clipPath id="clip0_180681_498">
+                            <rect width="48" height="48" fill="white" />
+                        </clipPath>
+                    </defs>
+                </svg>
+            </button>
+            <a href="index.html" class="logoMobile">
+                <img src="images/Logo.svg" alt="Logo alura books" id="logoMobile">
+            </a>
         </nav>
-
-        <nav class="nav_logo_desktop">
-            <div class="logo">                
-                <a href="index.html"><img src="images/Logo.svg" alt="Logo alura books" id="logoMobile"></a>
+        <nav class="nav desktop">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="images/Logo.svg" alt="Logo alura books" id="logoMobile"></a>
             </div>
-            <div class="texto_logo">                       
-                 <a href="index.html"><img src="images/AluraBooks.svg" alt="AluraBooks"></a>
+            <div class="texto_logo">
+                <a href="index.html">
+                    <img src="images/AluraBooks.svg" alt="AluraBooks"></a>
             </div>
         </nav>
         <nav class="opcoes desktop">
             <div class="categorias">
-                <p class="categorias_texto">CATEGORIAS</p>
+                <p class="categorias_texto opcoes_textos">CATEGORIAS</p>
             </div>
             <div class="favotiros">
-                <p class="favoritos_texto">FAVORITOS</p>
+                <p class="favoritos_texto opcoes_textos">FAVORITOS</p>
             </div>
             <div class="estante">
-                <p class="estante_texto">MINHA ESTANTE</p>
+                <p class="estante_texto opcoes_textos">MINHA ESTANTE</p>
             </div>
         </nav>
 
         <nav class="conta">
-            <div class="carrinho">
-                <a href="" class="perfil">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40"
-                    viewBox="0 0 38 38" fill="none" class="icon">
-                    <path
-                        d="M28.5002 9.49935H25.3335C25.3335 6.00018 22.4993 3.16602 19.0002 3.16602C15.501 3.16602 12.6668 6.00018 12.6668 9.49935H9.50016C7.7585 9.49935 6.3335 10.9243 6.3335 12.666V31.666C6.3335 33.4077 7.7585 34.8327 9.50016 34.8327H28.5002C30.2418 34.8327 31.6668 33.4077 31.6668 31.666V12.666C31.6668 10.9243 30.2418 9.49935 28.5002 9.49935ZM19.0002 6.33268C20.7418 6.33268 22.1668 7.75768 22.1668 9.49935H15.8335C15.8335 7.75768 17.2585 6.33268 19.0002 6.33268ZM28.5002 31.666H9.50016V12.666H12.6668V15.8327C12.6668 16.7035 13.3793 17.416 14.2502 17.416C15.121 17.416 15.8335 16.7035 15.8335 15.8327V12.666H22.1668V15.8327C22.1668 16.7035 22.8793 17.416 23.7502 17.416C24.621 17.416 25.3335 16.7035 25.3335 15.8327V12.666H28.5002V31.666Z"
-                        fill="#002F52" />
-                    </svg>
-                    <p>MINHA SACOLA</p>
-                </a>
-            </div>
-            <div class="perfil">
-                <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 32 32"
-                fill="none" class="icon">
-                <path
-                    d="M16 0C7.168 0 0 7.168 0 16C0 24.832 7.168 32 16 32C24.832 32 32 24.832 32 16C32 7.168 24.832 0 16 0ZM8.112 26.048C8.8 24.608 12.992 23.2 16 23.2C19.008 23.2 23.216 24.608 23.888 26.048C21.712 27.776 18.976 28.8 16 28.8C13.024 28.8 10.288 27.776 8.112 26.048ZM26.176 23.728C23.888 20.944 18.336 20 16 20C13.664 20 8.112 20.944 5.824 23.728C4.192 21.584 3.2 18.912 3.2 16C3.2 8.944 8.944 3.2 16 3.2C23.056 3.2 28.8 8.944 28.8 16C28.8 18.912 27.808 21.584 26.176 23.728ZM16 6.4C12.896 6.4 10.4 8.896 10.4 12C10.4 15.104 12.896 17.6 16 17.6C19.104 17.6 21.6 15.104 21.6 12C21.6 8.896 19.104 6.4 16 6.4ZM16 14.4C14.672 14.4 13.6 13.328 13.6 12C13.6 10.672 14.672 9.6 16 9.6C17.328 9.6 18.4 10.672 18.4 12C18.4 13.328 17.328 14.4 16 14.4Z"
-                    fill="#002F52" />
-            </svg>
+            <a href="index.html" class="favoritos">
+                <img src="images/Favoritos.svg" class="favoritos icon" alt="favoritos">
+            </a>
+            <a href="" class="conta_icones link_conta">
+                <img src="images/Sacola.svg" alt="" class="sacola icon">
+                <p class="desktop sacola tablet">MINHA SACOLA</p>
+            </a>
+            <a href="" class="conta_icones link_conta">
+                <img src="images/Vector.svg" alt="" class="perfil icon">
+                <p class="desktop tablet meu_perfil">MEU PERFIL</p>
+            </a>
 
-            <p>MEU PERFIL</p>
-        </a>                
-            </div>
         </nav>
     </header>
-  >  <!-- Aba de pesquisa -->
+    <!-- Aba de pesquisa -->
     <section class="pesquisa">
-        <div class="pesquisaDiv">
-            <h1>
-                Já sabe por onde começar?
-            </h1>
-
-            <p>
-                Encontre em nossa estante o que precisa para seu desenvolvimento!
-            </p>
-            <div class="pesquisaBtn">
-                <input required="" autocomplete="off" type="text" name="text" id="pesquisa" />
-                <div class="label">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 25 24" fill="none"
-                        class="lupa">
-                        <g clip-path="url(#clip0_113_1567)">
-                            <path
-                                d="M16 14H15.21L14.93 13.73C15.91 12.59 16.5 11.11 16.5 9.5C16.5 5.91 13.59 3 10 3C6.41 3 3.5 5.91 3.5 9.5C3.5 13.09 6.41 16 10 16C11.61 16 13.09 15.41 14.23 14.43L14.5 14.71V15.5L19.5 20.49L20.99 19L16 14ZM10 14C7.51 14 5.5 11.99 5.5 9.5C5.5 7.01 7.51 5 10 5C12.49 5 14.5 7.01 14.5 9.5C14.5 11.99 12.49 14 10 14Z"
-                                fill="white" />
-                        </g>
-                        <defs>
-                            <clipPath id="clip0_113_1567">
-                                <rect width="24" height="24" fill="white" transform="translate(0.5)" />
-                            </clipPath>
-                        </defs>
-                    </svg>
-                    <label for="pesquisa">Qual será sua próxima leitura?</label>
-                </div>
-            </div>
+        <h1 class="titulo_pesquisa">Já sabe por onde começar?</h1>
+        <p class="paragrafo_pesquisa">Encontre em nossa estante o que precisa para seu desenvolvimento!</p>
+        <div class="input">
+            <input required="" autocomplete="off" type="text" name="text" id="pesquisa" class="botao_pesquisa"
+                placeholder=" " />
+            <label for="pesquisa" class="texto_botao">Qual será sua próxima leitura?</label>
         </div>
     </section>
-
     <main>
         <!-- Ultimos lancamentos -->
-        <h1 class="titulo">últimos lançamentos</h1>
-        <section class="carrosel">
-            <div class="swiper">
-                <!-- If we need pagination -->
-                <div class="swiper-pagination"></div>
-                <!-- Additional required wrapper -->
-                <div class="swiper-wrapper">
-                    <!-- Slides -->
-                    <div class="swiper-slide"><img src="images/Javascript.svg" alt=""></div>
-                    <div class="swiper-slide"><img src="images/Liderança.svg" alt=""></div>
-                    <div class="swiper-slide"><img src="images/Nodejs.svg" alt=""></div>
-                    <div class="swiper-slide"><img src="images/Portugol.svg" alt=""></div>
-                    <div class="swiper-slide"><img src="images/Construct2.svg" alt=""></div>
-                    <div class="swiper-slide"><img src="images/Guia Front-end.svg" alt=""></div>
-                </div>
-
-
-
-
-                <!-- If we need scrollbar -->
-                <div class="swiper-scrollbar"></div>
-            </div>
-            <!-- If we need navigation buttons -->
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-button-next"></div>
-            <div class="livrosAngular">
-                <div class="abaFav">
-                    <div class="abaText text1">
-                        <h1>
-                            Talvez você também se interesse por...
-                        </h1>
-                        <h4>
-                            Angular 11 e Firebase
-                        </h4>
-                        <p>
-                            Construindo uma aplicação integrada com a plataforma do Google.
-                        </p>
-                    </div>
-                    <div class="fav">
-                        <input type="checkbox" id="fav">
-                        <label for="fav"></label>
-                        <img class="imgFav" src="images/Sacola.svg" alt="">
-                    </div>
-                </div>
-                <div class="Ang">
-                    <img class="imgAngular" src="images/angular.png" alt="">
-                    <button class="btnSaiba">
-                        saiba mais
-                    </button>
-                </div>
-
-            </div>
-        </section>
-
-        <!-- Mais vendidos -->
-        <h1 class="titulo">mais vendidos</h1>
-
-        <section class="carrosel">
-            <div class="swiper">
-                <!-- If we need pagination -->
-                <div class="swiper-pagination"></div>
-                <!-- Additional required wrapper -->
-                <div class="swiper-wrapper">
-                    <!-- Slides -->
-                    <div class="swiper-slide"><img src="images/Javascript.svg" alt=""></div>
-                    <div class="swiper-slide"><img src="images/Liderança.svg" alt=""></div>
-                    <div class="swiper-slide"><img src="images/Nodejs.svg" alt=""></div>
-                    <div class="swiper-slide"><img src="images/portugol.svg" alt=""></div>
-                    <div class="swiper-slide"><img src="images/Construct2.svg" alt=""></div>
-                    <div class="swiper-slide"><img src="images/Guia Front-end.svg" alt=""></div>
-                </div>
-                <!-- If we need scrollbar -->
-                <div class="swiper-scrollbar"></div>
-            </div>
-            <!-- If we need navigation buttons -->
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-button-next"></div>
-            <div class="livrosAngular">
-                <div class="abaFav">
-                    <div class="abaText">
-                        <img class="estrelaImg" src="images/Estrelinhas.svg" alt="estrelas">
-                        <h1>
-                            Autora do Mês
-                        </h1>
-                        <h4>
-                            Juliana Agarikov
-                        </h4>
-                        <p>
-                            Analista de sistemas e escritora, Juliana é especialista em Front-End.
-                        </p>
-                    </div>
-                    <div class="fav">
-                        <input type="checkbox" id="favo">
-                        <label for="favo"></label>
-                        <img class="imgFav" src="images/Sacola.svg" alt="">
-                    </div>
-                </div>
-                <div class="Ang">
-                    <img class="imgAngular esc" src="images/escritoria.png" alt="">
-                    <button class="btnSaiba">
-                        saiba mais
-                    </button>
-                </div>
-
-            </div>
-        </section>
-
-        <section class="topicos">
-            <h1>TÓPICOS VISITADOS RECENTEMENTE</h1>
-            <section class="topicosBtn">
-
-                <button class="btnSaiba tops">Marketing Digital</button>
-                <button class="btnSaiba tops">Agile</button>
-                <button class="btnSaiba tops">Startps</button>
-                <button class="btnSaiba tops">HTML & CSS</button>
-                <button class="btnSaiba tops">Java</button>
-                <button class="btnSaiba tops">Python</button>
-                <button class="btnSaiba tops">Android</button>
-            </section>
-        </section>
-
-
-        <section class="email">
-
-            <div class="emailText">
-                <h1>Fique por dentro das novidades!</h1>
-                <p>Atualizações de e-books, novos livros, promoções e outros.</p>
-            </div>
-
-
-            <div class="emailCad">
-                <input required="" autocomplete="off" type="email" name="text" id="email" />
+        <h1 class="titulo_lancamentos">últimos lançamentos</h1>
+        <div class="lancamentos">
+            <div class="carossel">
+                <!-- Slides -->
+                <input type="radio" name="radiolanc" id="radioLanc1" class="navigatorManualLanc">
+                <input type="radio" name="radiolanc" id="radioLanc2" class="navigatorManualLanc">
+                <input type="radio" name="radiolanc" id="radioLanc3" class="navigatorManualLanc">
+                <input type="radio" name="radiolanc" id="radioLanc4" class="navigatorManualLanc">
+                <img src="images/Javascript.svg" alt="" class="img">
+                <img src="images/Liderança.svg" alt="" class="img">
+                <img src="images/Nodejs.svg" alt="" class="img">
+                <img src="images/Portugol.svg" alt="" class="img">
+                <img src="images/Construct2.svg" alt="" class="img">
+                <img src="images/Guia Front-end.svg" alt="" class="img">
                 <div class="label">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                        class="emailSVG">
-                        <g clip-path="url(#clip0_113_1598)">
-                            <path
-                                d="M22 6C22 4.9 21.1 4 20 4H4C2.9 4 2 4.9 2 6V18C2 19.1 2.9 20 4 20H20C21.1 20 22 19.1 22 18V6ZM20 6L12 10.99L4 6H20ZM20 18H4V8L12 13L20 8V18Z"
-                                fill="url(#paint0_linear_113_1598)" />
-                        </g>
-                        <defs>
-                            <linearGradient id="paint0_linear_113_1598" x1="10.3565" y1="2.07999" x2="38.9873"
-                                y2="6.8188" gradientUnits="userSpaceOnUse">
-                                <stop stop-color="#002F52" />
-                                <stop offset="1" stop-color="#326589" />
-                            </linearGradient>
-                            <clipPath id="clip0_113_1598">
-                                <rect width="24" height="24" fill="white" />
-                            </clipPath>
-                        </defs>
-                    </svg>
-                    <label for="pesquisa">Cadastre seu e-mail</label>
+                    <label for="radioLanc1" class="radioBtnLanc1 btnLanc" onclick="resetCont(1)"></label>
+                    <label for="radioLanc2" class="radioBtnLanc2 btnLanc" onclick="resetCont(2)"></label>
+                    <label for="radioLanc3" class="radioBtnLanc3 btnLanc" onclick="resetCont(3)"></label>
+                    <label for="radioLanc4" class="radioBtnLanc4 btnLanc" onclick="resetCont(4)"></label>
                 </div>
             </div>
-
+            <div class="btnsLanc">
+                <button class="anteriorLanc setaLanc" onmouseout="rein()" onclick="anteriorLanc()"></button>
+                <button class="proximoLanc setaLanc" onmouseout="rein()" onclick="proximoLanc()"></button>
+            </div>
+            <div class="abaLivros">
+                <h1 class="titulo_livros">Talvez você também se interesse por...</h1>
+                <h4 class="descricao_livros">Angular 11 e Firebase</h4>
+                <p class="paragrafo_livros">Construindo uma aplicação integrada com a plataforma do Google.</p>
+                <img class="imgAngular" src="images/angular.png" alt="">
+                <div class="FavCar">
+                    <img class="imagemFavoritos" src="images/Favoritos.svg" alt="">
+                    <img class="imagemCarrinho" src="images/Sacola.svg" alt="">
+                </div>
+                <button class="btnSaiba">saiba mais</button>
+            </div>
+        </div>
         </section>
+        <!-- Ultimos lancamentos -->
+        <!-- seção de mais vendidos -->
+        <h1 class="titulo_vendidos">mais vendidos</h1>
+        <div class="vendidos">
+            <div class="carossel">
+                <!-- Slides -->
+                <input type="radio" name="radioVend" id="radioVend1" class="navigatorManualVend">
+                <input type="radio" name="radioVend" id="radioVend2" class="navigatorManualVend">
+                <input type="radio" name="radioVend" id="radioVend3" class="navigatorManualVend">
+                <input type="radio" name="radioVend" id="radioVend4" class="navigatorManualVend">
+                <img src="images/Javascript.svg" alt="" class="img">
+                <img src="images/Liderança.svg" alt="" class="img">
+                <img src="images/Nodejs.svg" alt="" class="img">
+                <img src="images/Portugol.svg" alt="" class="img">
+                <img src="images/Construct2.svg" alt="" class="img">
+                <img src="images/Guia Front-end.svg" alt="" class="img">
+                <div class="label">
+                    <label for="radioVend1" class="radioBtnVend1 btnVend" onclick="resetCont(1)"></label>
+                    <label for="radioVend2" class="radioBtnVend2 btnVend" onclick="resetCont(2)"></label>
+                    <label for="radioVend3" class="radioBtnVend3 btnVend" onclick="resetCont(3)"></label>
+                    <label for="radioVend4" class="radioBtnVend4 btnVend" onclick="resetCont(4)"></label>
+                </div>
+            </div>
+            <div class="btnsVend">
+                <button class="anteriorVend setaVend" onmouseout="rein()" onclick="anteriorVend()"></button>
+                <button class="proximoVend setaVend" onmouseout="rein()" onclick="proximoVend()"></button>
+            </div>
+            <div class="autoraMes">
+                <img src="images/Estrelinhas.svg" alt="cinco estrelas" class="estrelas">
+                <h1 class="autora_titulo">autora do mês</h1>
+                <h4 class="autora">juliana agarikov</h4>
+                <p class="autora_descricao">Analista de sistemas e escritora, Juliana é especialista em Front_End.</p>
+                <img src="images/escritoria.png" alt="autora juliana agarikov" class="autora_img">
+                <div class="FarCar">
+                    <img src="images/Favoritos.svg" alt="favoritos" class="favoritos">
+                    <img src="images/Sacola.svg" alt="carrinho de compras" class="carrinho">
+                </div>
+                <button class="btnSaiba">saiba mais</button>
+            </div>
+        </div>
+        <!-- seção de mais vendidos -->
+        <!-- seção de topicos -->
+        <section class="topicos">
+            <h1 class="titulo_topicos">TÓPICOS VISITADOS RECENTEMENTE</h1>
+
+            <button class="btnSaiba tops">Marketing Digital</button>
+            <button class="btnSaiba tops">Agile</button>
+            <button class="btnSaiba tops">Startps</button>
+            <button class="btnSaiba tops">HTML & CSS</button>
+            <button class="btnSaiba tops">Java</button>
+            <button class="btnSaiba tops">Python</button>
+            <button class="btnSaiba tops">Android</button>
+            <button class="btnSaiba tops">OO</button>
+        </section>
+        <!-- seção de topicos -->
+        <!-- seção de email -->
+        <section class="email">
+            <h1 class="titulo_email">Fique por dentro das novidades!</h1>
+            <p class="paragrafo_email">Atualizações de e-books, novos livros, promoções e outros.</p>
+            <input required="" class="emailBtn" autocomplete="off" type="email" name="text" id="email" />
+            <label for="email" class="placeholderEmail">Cadastre seu e-mail</label>
+        </section>
+        <!-- seção de email -->
     </main>
+    <footer class="footer">
+        <h1 class="footer_titulo">Grupo Alura</h1>
+        <ul class="abas ">
+            <h2 class="aba_titulo">educação</h2>
+            <li class="footerItens">
+                <img src="images/Caelum.png" alt="caelum">
+                Caelum
+            </li>
+            <li class="footerItens">
+                <img src="images/casadocodigo.png" alt="casa do codigo">
+                <p>Casa do Código</p>
+            </li>
+        </ul>
 
-    <footer>
-        <h1>Grupo Alura</h1>
-        <div>
-            <h2>educação</h2>
-            <ul>
-                <li class="footerItens">
-                    <img src="s/caelum.png" alt="caelum">
-                    Caelum
-                </li>
-                <li class="footerItens">
-                    <img src="images/casadocodigo.png" alt="casa do codigo">
-                    <p>Casa do Código</p>
-                </li>
-            </ul>
-
-        </div>
-        <div>
-            <h2>educação online</h2>
-            <ul>
-                <li class="footerItens">
-                    <img src="images/alura.png" alt="caelum">
-                    <p>Alura</p>
-                </li>
-                <li class="footerItens">
-                    <img src="images/aluraempresa.png" alt="casa do codigo">
-                    <p>Alura para Empresas</p>
-                </li>
-                <li class="footerItens">
-                    <img src="images/latam.png" alt="casa do codigo">
-                    <p>Alura LATAM</p>
-                </li>
-                <li class="footerItens">
-                    <img src="images/start.png" alt="casa do codigo">
-                    <p>Alura Start</p>
-                </li>
-                <li class="footerItens">
-                    <img src="images/dot.png" alt="casa do codigo">
-                    <p>MusicDot</p>
-                </li>
-                <li class="footerItens">
-                    <img src="images/lingua.png" alt="casa do codigo">
-                    <p>Alura Língua</p>
-                </li>
-                <li class="footerItens">
-                    <img src="images/pm3.png" alt="casa do codigo">
-                    <p>PM3</p>
-                </li>
-            </ul>
-        </div>
-        <div>
-            <h2>comunidade</h2>
-            <ul>
-                <li class="footerItens">
-                    <img src="images/hipsterstech.png" alt="caelum">
-                    <p>Hipters ponto Tech</p>
-                </li>
-                <li class="footerItens">
-                    <img src="images/scuba.png" alt="casa do codigo">
-                    <p>Scuba Dev</p>
-                </li>
-                <li class="footerItens">
-                    <img src="images/layers.png" alt="casa do codigo">
-                    <p>Layers ponto Tech</p>
-                </li>
-                <li class="footerItens">
-                    <img src="images/boss.png" alt="casa do codigo">
-                    <p>Like a Boss</p>
-                </li>
-                <li class="footerItens">
-                    <img src="images/carreira.png" alt="casa do codigo">
-                    <p>Carreira sem Fronteira</p>
-                </li>
-                <li class="footerItens">
-                    <img src="images/jobs.png" alt="casa do codigo">
-                    <p>Hipsters ponto Jobs</p>
-                </li>
-                <li class="footerItens">
-                    <img src="images/guj.png" alt="casa do codigo">
-                    <p>GUJ</p>
-                </li>
-            </ul>
-        </div>
+        <ul class="abas">
+            <h2 class="aba_titulo">educação online</h2>
+            <li class="footerItens">
+                <img src="images/alura.png" alt="caelum">
+                <p>Alura</p>
+            </li>
+            <li class="footerItens">
+                <img src="images/aluraempresa.png" alt="casa do codigo">
+                <p>Alura para Empresas</p>
+            </li>
+            <li class="footerItens">
+                <img src="images/latam.png" alt="casa do codigo">
+                <p>Alura LATAM</p>
+            </li>
+            <li class="footerItens">
+                <img src="images/start.png" alt="casa do codigo">
+                <p>Alura Start</p>
+            </li>
+            <li class="footerItens">
+                <img src="images/dot.png" alt="casa do codigo">
+                <p>MusicDot</p>
+            </li>
+            <li class="footerItens">
+                <img src="images/lingua.png" alt="casa do codigo">
+                <p>Alura Língua</p>
+            </li>
+            <li class="footerItens">
+                <img src="images/pm3.png" alt="casa do codigo">
+                <p>PM3</p>
+            </li>
+        </ul>
+        <ul class="abas">
+            <h2 class="aba_titulo">comunidade</h2>
+            <li class="footerItens">
+                <img src="images/hipsterstech.png" alt="caelum">
+                <p>Hipters ponto Tech</p>
+            </li>
+            <li class="footerItens">
+                <img src="images/scuba.png" alt="casa do codigo">
+                <p>Scuba Dev</p>
+            </li>
+            <li class="footerItens">
+                <img src="images/layers.png" alt="casa do codigo">
+                <p>Layers ponto Tech</p>
+            </li>
+            <li class="footerItens">
+                <img src="images/boss.png" alt="casa do codigo">
+                <p>Like a Boss</p>
+            </li>
+            <li class="footerItens">
+                <img src="images/carreira.png" alt="casa do codigo">
+                <p>Carreira sem Fronteira</p>
+            </li>
+            <li class="footerItens">
+                <img src="images/jobs.png" alt="casa do codigo">
+                <p>Hipsters ponto Jobs</p>
+            </li>
+            <li class="footerItens">
+                <img src="images/guj.png" alt="casa do codigo">
+                <p>GUJ</p>
+            </li>
+        </ul>
     </footer>
-
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script src="java.js"></script>
-    <script>
-        const swiper = new Swiper('.swiper', {
-            spaceBetween: 10,
-            slidesPerView: 3,
-            pagination: {
-                el: '.swiper-pagination',
-                type: 'bullets'
-            }, navigation: {
-                nextEl: '.swiper-button-next',
-                prevEl: '.swiper-button-prev',
-            },
-        });
-    </script>
+    <script src="carrosel.js"></script>
 </body>
 
 </html>
